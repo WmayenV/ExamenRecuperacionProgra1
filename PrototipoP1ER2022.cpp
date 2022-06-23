@@ -1144,7 +1144,7 @@ void corpoComercial::mostrarMarcas(){
                 cout << "\n\t\tIngrese el codigo de marca a buscar: "; cin >> busquedaDatos;
                  baseDatos>>codigoMarca>>nombreMarca>>statusMarca;
                 while(!baseDatos.eof()){
-                    if(busquedaDatos==codigoProducto){
+                    if(busquedaDatos==codigoMarca){
                         cout << "\n\t\tCodigo de marca: " << codigoMarca;
                         cout << "\t\tNombre de marca: " << nombreMarca;
                         cout << "\t\tStatus de marca: " <<statusMarca;
