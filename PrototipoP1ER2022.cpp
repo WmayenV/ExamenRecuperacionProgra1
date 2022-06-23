@@ -60,7 +60,7 @@ public:
     void mostrarLineas();
 
 private:
-    string desicion, busquedaDatos, codigoCliente, nombreCli, direccionCli, nitCli, telefonoCli, codigoVen, statusCli, codigoVendedor, nombreVen, direccionVen, telefonoVen, nitVen, statusVen, codigoProducto, nombreProd, codLinea, codMarca, exisProd, statusProd, codigoMarca, nombreMarca, statusMarca, codigoLinea, nombreLinea, statusLinea;
+    string desicion, busquedaDatos, codigoCliente, nombreCli, direccionCli, nitCli, telefonoCli, codigoVen, statusCli, codigoVendedor, nombreVen, direccionVen, telefonoVen, nitVen, statusVen, codigoProducto, nombreProd, codLinea, codMarca, exisProd, statusProd, codigoMarca, nombreMarca, statusMarca, codigoLinea, nombreLinea, statusLinea, baseDatos;
 
 };
 //inicio menuGeneral
@@ -299,13 +299,13 @@ void corpoComercial::mostrarClientes(){
                 baseDatos>>codigoCliente>>nombreCli>>direccionCli>>nitCli>>telefonoCli>>codigoVen>>statusCli;
                 while(!baseDatos.eof()){
                     if(busquedaDatos==codigoCliente){
-                        cout << "\n\t\tCcodigo de cliente: "; cin >> codigoCliente;
-                        cout << "\t\tNombre del cliente: "; cin >> nombreCli;
-                        cout << "\t\tDireccion del cliente: "; cin >> direccionCli;
-                        cout << "\t\tNit del cliente: "; cin >> nitCli;
-                        cout << "\t\tTelefono del clliente: "; cin >> telefonoCli;
-                        cout << "\t\tCodigo de vendedor: "; cin >> codigoVen;
-                        cout << "\t\tStatus del cliente: "; cin>>statusCli;
+                        cout << "\n\t\tCcodigo de cliente: " << codigoCliente;
+                        cout << "\t\tNombre del cliente: " << nombreCli;
+                        cout << "\t\tDireccion del cliente: " << direccionCli;
+                        cout << "\t\tNit del cliente: " << nitCli;
+                        cout << "\t\tTelefono del clliente: " << telefonoCli;
+                        cout << "\t\tCodigo de vendedor: " << codigoVen;
+                        cout << "\t\tStatus del cliente: " << statusCli;
                         datos++;
                         if (baseDatos.is_open()){
                             baseDatos.close();
@@ -351,13 +351,13 @@ void corpoComercial::mostrarClientes(){
                 while(!baseDatos.eof())
                 {
                     total++;
-                    cout << "\n\t\tCcodigo de cliente: "; cin >> codigoCliente;
-                    cout << "\t\tNombre del cliente: "; cin >> nombreCli;
-                    cout << "\t\tDireccion del cliente: "; cin >> direccionCli;
-                    cout << "\t\tNit del cliente: "; cin >> nitCli;
-                    cout << "\t\tTelefono del clliente: "; cin >> telefonoCli;
-                    cout << "\t\tCodigo de vendedor: "; cin >> codigoVen;
-                    cout << "\t\tStatus del cliente: "; cin>>statusCli;
+                    cout << "\n\t\tCcodigo de cliente: " << codigoCliente;
+                    cout << "\t\tNombre del cliente: " << nombreCli;
+                    cout << "\t\tDireccion del cliente: " << direccionCli;
+                    cout << "\t\tNit del cliente: " << nitCli;
+                    cout << "\t\tTelefono del clliente: " << telefonoCli;
+                    cout << "\t\tCodigo de vendedor: " << codigoVen;
+                    cout << "\t\tStatus del cliente: " << statusCli;
                     baseDatos>>codigoCliente>>nombreCli>>direccionCli>>nitCli>>telefonoCli>>codigoVen>>statusCli;
                     //if (baseDatos.is_open()){
                       //  baseDatos.close();
@@ -584,12 +584,12 @@ void corpoComercial::mostrarVendedores(){
                 baseDatos>>codigoVendedor>>nombreVen>>direccionVen>>nitVen>>telefonoVen>>statusVen;
                 while(!baseDatos.eof()){
                     if(busquedaDatos==codigoVendedor){
-                        cout << "\n\t\tCodigo de vendedor: "; cin >> codigoVendedor;
-                        cout << "\t\tNombre del vendedor: "; cin >> nombreVen;
-                        cout << "\t\tDireccion del vendedor: "; cin >> direccionVen;
-                        cout << "\t\tNit del vendedor: "; cin >> nitVen;
-                        cout << "\t\tTelefono del vendedor: "; cin >> telefonoVen;
-                        cout << "\t\tStatus del vendedor: "; cin>>statusVen;
+                        cout << "\n\t\tCodigo de vendedor: " << codigoVendedor;
+                        cout << "\t\tNombre del vendedor: " << nombreVen;
+                        cout << "\t\tDireccion del vendedor: " << direccionVen;
+                        cout << "\t\tNit del vendedor: " << nitVen;
+                        cout << "\t\tTelefono del vendedor: " << telefonoVen;
+                        cout << "\t\tStatus del vendedor: " << statusVen;
                         datos++;
                         if (baseDatos.is_open()){
                             baseDatos.close();
@@ -635,12 +635,12 @@ void corpoComercial::mostrarVendedores(){
                 while(!baseDatos.eof())
                 {
                     total++;
-                        cout << "\n\t\tCodigo de vendedor: "; cin >> codigoVendedor;
-                        cout << "\t\tNombre del vendedor: "; cin >> nombreVen;
-                        cout << "\t\tDireccion del vendedor: "; cin >> direccionVen;
-                        cout << "\t\tNit del vendedor: "; cin >> nitVen;
-                        cout << "\t\tTelefono del vendedor: "; cin >> telefonoVen;
-                        cout << "\t\tStatus del vendedor: "; cin>>statusVen;
+                        cout << "\n\t\tCodigo de vendedor: "<< codigoVendedor;
+                        cout << "\t\tNombre del vendedor: " << nombreVen;
+                        cout << "\t\tDireccion del vendedor: "<< direccionVen;
+                        cout << "\t\tNit del vendedor: "<< nitVen;
+                        cout << "\t\tTelefono del vendedor: "<< telefonoVen;
+                        cout << "\t\tStatus del vendedor: "<<statusVen;
                     baseDatos>>codigoVendedor>>nombreVen>>direccionVen>>nitVen>>telefonoVen>>statusVen;
                     //if (baseDatos.is_open()){
                       //  baseDatos.close();
@@ -868,12 +868,12 @@ void corpoComercial::mostrarProductos(){
                 baseDatos>>codigoProducto>>nombreProd>>codLinea>>codMarca>>exisProd>>statusProd;
                 while(!baseDatos.eof()){
                     if(busquedaDatos==codigoProducto){
-                        cout << "\n\t\tCodigo del producto: "; cin >> codigoProducto;
-                        cout << "\t\tNombre del producto: "; cin >> nombreProd;
-                        cout << "\t\tCodigo de linea del producto: "; cin >> codLinea;
-                        cout << "\t\tCodigo de marca del producto: "; cin >> codMarca;
-                        cout << "\t\tExostencia del producto: "; cin >> exisProd;
-                        cout << "\t\tStatus del producto: "; cin>>statusProd;
+                        cout << "\n\t\tCodigo del producto: " << codigoProducto;
+                        cout << "\t\tNombre del producto: " << nombreProd;
+                        cout << "\t\tCodigo de linea del producto: " << codLinea;
+                        cout << "\t\tCodigo de marca del producto: " << codMarca;
+                        cout << "\t\tExostencia del producto: " << exisProd;
+                        cout << "\t\tStatus del producto: " << statusProd;
                         datos++;
                         if (baseDatos.is_open()){
                             baseDatos.close();
@@ -919,12 +919,12 @@ void corpoComercial::mostrarProductos(){
                 while(!baseDatos.eof())
                 {
                     total++;
-                        cout << "\n\t\tCodigo del producto: "; cin >> codigoProducto;
-                        cout << "\t\tNombre del producto: "; cin >> nombreProd;
-                        cout << "\t\tCodigo de linea del producto: "; cin >> codLinea;
-                        cout << "\t\tCodigo de marca del producto: "; cin >> codMarca;
-                        cout << "\t\tExostencia del producto: "; cin >> exisProd;
-                        cout << "\t\tStatus del producto: "; cin>>statusProd;
+                        cout << "\n\t\tCodigo del producto: " << codigoProducto;
+                        cout << "\t\tNombre del producto: "<< nombreProd;
+                        cout << "\t\tCodigo de linea del producto: "<< codLinea;
+                        cout << "\t\tCodigo de marca del producto: "<< codMarca;
+                        cout << "\t\tExostencia del producto: " << exisProd;
+                        cout << "\t\tStatus del producto: "<<statusProd;
                    baseDatos>>codigoProducto>>nombreProd>>codLinea>>codMarca>>exisProd>>statusProd;
                     //if (baseDatos.is_open()){
                       //  baseDatos.close();
@@ -1145,9 +1145,9 @@ void corpoComercial::mostrarMarcas(){
                  baseDatos>>codigoMarca>>nombreMarca>>statusMarca;
                 while(!baseDatos.eof()){
                     if(busquedaDatos==codigoProducto){
-                        cout << "\n\t\tCodigo de marca: "; cin >> codigoMarca;
-                        cout << "\t\tNombre de marca: "; cin >> nombreMarca;
-                        cout << "\t\tStatus de marca: "; cin>>statusMarca;
+                        cout << "\n\t\tCodigo de marca: " << codigoMarca;
+                        cout << "\t\tNombre de marca: " << nombreMarca;
+                        cout << "\t\tStatus de marca: " <<statusMarca;
                         datos++;
                         if (baseDatos.is_open()){
                             baseDatos.close();
@@ -1193,9 +1193,9 @@ void corpoComercial::mostrarMarcas(){
                 while(!baseDatos.eof())
                 {
                     total++;
-                        cout << "\n\t\tCodigo de marca: "; cin >> codigoMarca;
-                        cout << "\t\tNombre de marca: "; cin >> nombreMarca;
-                        cout << "\t\tStatus de marca: "; cin>>statusMarca;
+                        cout << "\n\t\tCodigo de marca: " << codigoMarca;
+                        cout << "\t\tNombre de marca: " << nombreMarca;
+                        cout << "\t\tStatus de marca: " <<statusMarca;
                     baseDatos>>codigoMarca>>nombreMarca>>statusMarca;
                     //if (baseDatos.is_open()){
                       //  baseDatos.close();
@@ -1416,9 +1416,9 @@ void corpoComercial::mostrarLineas(){
                  baseDatos>>codigoLinea>>nombreLinea>>statusLinea;
                 while(!baseDatos.eof()){
                     if(busquedaDatos==codigoLinea){
-                        cout << "\n\t\tCodigo de linea: "; cin >> codigoLinea;
-                        cout << "\t\tNombre de linea: "; cin >> nombreLinea;
-                        cout << "\t\tStatus de linea: "; cin>>statusLinea;
+                        cout << "\n\t\tCodigo de linea: " << codigoLinea;
+                        cout << "\t\tNombre de linea: " << nombreLinea;
+                        cout << "\t\tStatus de linea: "<<statusLinea;
                         datos++;
                         if (baseDatos.is_open()){
                             baseDatos.close();
@@ -1464,9 +1464,9 @@ void corpoComercial::mostrarLineas(){
                 while(!baseDatos.eof())
                 {
                     total++;
-                        cout << "\n\t\tCodigo de lineas: "; cin >> codigoLinea;
-                        cout << "\t\tNombre de lineas: "; cin >> nombreLinea;
-                        cout << "\t\tStatus de lineas: "; cin>>statusLinea;
+                        cout << "\n\t\tCodigo de lineas: " << codigoLinea;
+                        cout << "\t\tNombre de lineas: " << nombreLinea;
+                        cout << "\t\tStatus de lineas: " << statusLinea;
                     baseDatos>>codigoLinea>>nombreLinea>>statusLinea;
                     //if (baseDatos.is_open()){
                       //  baseDatos.close();
