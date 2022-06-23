@@ -55,7 +55,7 @@ public:
     void menuLineas();
 
 private:
-    string desicion, busquedaDatos, codigoCliente, nombreCli, direccionCli, nitCli, telefonoCli, codigoVen, statusCli, codigoVendedor, nombreVen, direccionVen, telefonoVen, nitVen, statusVen, codigoProducto, nombreProd, codLinea, codMarca, exisProd, statusProd;
+    string desicion, busquedaDatos, codigoCliente, nombreCli, direccionCli, nitCli, telefonoCli, codigoVen, statusCli, codigoVendedor, nombreVen, direccionVen, telefonoVen, nitVen, statusVen, codigoProducto, nombreProd, codLinea, codMarca, exisProd, statusProd, codigoMarca, nombreMarca, statusMarca;
 
 };
 
