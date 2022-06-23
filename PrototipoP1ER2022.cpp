@@ -18,14 +18,20 @@ using namespace std;
 class corpoComercial{
 public:
     void menuGeneral();
+
     void menuClientes();
+    void registrarClientes();
+    void modificarClientes();
+    void eliminarClientes();
+    void mostrarClientes();
+
     void menuVendedores();
     void menuProductos();
     void menuMarcas();
     void menuLineas();
 
 private:
-    string desicion;
+    string desicion, busquedaDatos, codigoCliente, nombreCli, direccionCli, nitCli, telefonoCli, codigoVen, statusCli;
 
 };
 
@@ -262,7 +268,7 @@ void corpoComercial::mostrarClientes(){
                 cout << "\n\t\tIngrese el codigo del cliente a buscar: "; cin >> busquedaDatos;
                 baseDatos>>codigoCliente>>nombreCli>>direccionCli>>nitCli>>telefonoCli>>codigoVen>>statusCli;
                 while(!baseDatos.eof()){
-                    if(busquedaDatos==codigoClientes){
+                    if(busquedaDatos==codigoCliente){
                         cout << "\n\t\tCcodigo de cliente: "; cin >> codigoCliente;
                         cout << "\t\tNombre del cliente: "; cin >> nombreCli;
                         cout << "\t\tDireccion del cliente: "; cin >> direccionCli;
