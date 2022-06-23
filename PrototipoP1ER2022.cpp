@@ -386,6 +386,7 @@ void corpoComercial::mostrarClientes(){
     }
 }
 // fin menu clientes//
+//inicio menuVendedores//
 void corpoComercial::menuVendedores(){
     system("cls");
     int menu;
@@ -693,7 +694,7 @@ void corpoComercial::menuProductos(){
         break;
     }
 }
-
+//fin menu vendedores//
 void corpoComercial::registrarProductos(){
     system("cls");
     fstream baseDatos;
