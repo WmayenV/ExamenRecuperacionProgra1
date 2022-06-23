@@ -668,7 +668,8 @@ void corpoComercial::mostrarVendedores(){
             cout<<"\n\n\t\tArchivo cerrado";}
     }
 }
-
+// fin menu vendedores//
+//inicio menu Productos//
 void corpoComercial::menuProductos(){
     system("cls");
     int menu;
@@ -694,7 +695,8 @@ void corpoComercial::menuProductos(){
         break;
     }
 }
-//fin menu vendedores//
+
+
 void corpoComercial::registrarProductos(){
     system("cls");
     fstream baseDatos;
@@ -950,7 +952,7 @@ void corpoComercial::mostrarProductos(){
             cout<<"\n\n\t\tArchivo cerrado";}
     }
 }
-
+//fin menu productos//
 void corpoComercial::menuMarcas(){
     system("cls");
     int menu;
