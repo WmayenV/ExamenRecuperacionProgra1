@@ -26,32 +26,33 @@ using namespace std;
 
 class corpoComercial{
 public:
+    //menuGeneral//
     void menuGeneral();
-
+    //menuclientes//
     void menuClientes();
     void registrarClientes();
     void modificarClientes();
     void eliminarClientes();
     void mostrarClientes();
-
+    //menuVendedores//
     void menuVendedores();
     void registrarVendedores();
     void modificarVendedores();
     void eliminarVendedores();
     void mostrarVendedores();
-
+    //menu Productos
     void menuProductos();
     void registrarProductos();
     void modificarProductos();
     void eliminarProductos();
     void mostrarProductos();
-
+   // menuMarcas
     void menuMarcas();
     void registrarMarcas();
     void modificarMarcas();
     void eliminarMarcas();
     void mostrarMarcas();
-
+    // menuLineas
     void menuLineas();
     void registrarLineas();
     void modificarLineas();
