@@ -143,7 +143,7 @@ void corpoComercial::registrarClientes(){
         cout << "\t\tIngrese codigo de vendedor a registrar: "; cin >> codigoVen;
         cout << "\t\tIngrese el status del cliente: "; cin>>statusCli;
         cout << "\n\t--Registro cliente--\n" << endl;
-        baseDatos.open("cliente.dat",ios::app | ios::out | ios::binary);
+        baseDatos.open("clientes.dat",ios::app | ios::out | ios::binary);
         baseDatos<<std::left<<std::setw(20)<< codigoCliente <<std::left<<std::setw(50)<< nombreCli <<std::left<<std::setw(10)<< direccionCli <<std::left<<std::setw(20)<< nitCli <<std::left<<std::setw(15)<< telefonoCli <<std::left<<std::setw(20)<< codigoVen << std::left<<std::setw(20)<< statusCli << "\n";
         baseDatos.close();
     }
@@ -352,12 +352,12 @@ void corpoComercial::mostrarClientes(){
                 {
                     total++;
                     cout << "\n\t\tCcodigo de cliente: "; cin >> codigoCliente;
-                        cout << "\t\tNombre del cliente: "; cin >> nombreCli;
-                        cout << "\t\tDireccion del cliente: "; cin >> direccionCli;
-                        cout << "\t\tNit del cliente: "; cin >> nitCli;
-                        cout << "\t\tTelefono del clliente: "; cin >> telefonoCli;
-                        cout << "\t\tCodigo de vendedor: "; cin >> codigoVen;
-                        cout << "\t\tStatus del cliente: "; cin>>statusCli;
+                    cout << "\t\tNombre del cliente: "; cin >> nombreCli;
+                    cout << "\t\tDireccion del cliente: "; cin >> direccionCli;
+                    cout << "\t\tNit del cliente: "; cin >> nitCli;
+                    cout << "\t\tTelefono del clliente: "; cin >> telefonoCli;
+                    cout << "\t\tCodigo de vendedor: "; cin >> codigoVen;
+                    cout << "\t\tStatus del cliente: "; cin>>statusCli;
                     baseDatos>>codigoCliente>>nombreCli>>direccionCli>>nitCli>>telefonoCli>>codigoVen>>statusCli;
                     //if (baseDatos.is_open()){
                       //  baseDatos.close();
@@ -993,7 +993,7 @@ void corpoComercial::registrarMarcas(){
         cout << "\t\tIngrese el nombre de marca a registrar: "; cin >> nombreMarca;
         cout << "\t\tIngrese el status del producto: "; cin>>statusMarca;
         cout << "\n\t--Registro marca--\n" << endl;
-        baseDatos.open("productos.dat",ios::app | ios::out | ios::binary);
+        baseDatos.open("marcas.dat",ios::app | ios::out | ios::binary);
         baseDatos<<std::left<<std::setw(20)<< codigoMarca <<std::left<<std::setw(50)<< nombreMarca << std::left<<std::setw(20)<< statusMarca << "\n";
         baseDatos.close();
     }
