@@ -1495,6 +1495,7 @@ void corpoComercial::mostrarLineas(){
     }
 }
 // fin menu lineas//
+// inicio seguridad//
 int main(){
     system ("cls");
     int contador=0;
@@ -1575,4 +1576,5 @@ int main(){
         config.close();
     }
     config.close();
+    //fin seguridad//
 };
