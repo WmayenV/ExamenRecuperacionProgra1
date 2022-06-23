@@ -35,12 +35,17 @@ public:
     void mostrarClientes();
 
     void menuVendedores();
+    void registrarVendedores();
+    void modificarVendedores();
+    void eliminarVendedores();
+    void mostrarVendedores();
+
     void menuProductos();
     void menuMarcas();
     void menuLineas();
 
 private:
-    string desicion, busquedaDatos, codigoCliente, nombreCli, direccionCli, nitCli, telefonoCli, codigoVen, statusCli;
+    string desicion, busquedaDatos, codigoCliente, nombreCli, direccionCli, nitCli, telefonoCli, codigoVen, statusCli, codigoVendedor, nombreVen, direccionVen, telefonoVen, nitVen, statusVen;
 
 };
 
