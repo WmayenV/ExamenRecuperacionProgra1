@@ -953,6 +953,7 @@ void corpoComercial::mostrarProductos(){
     }
 }
 //fin menu productos//
+// inicio menu Marcas//
 void corpoComercial::menuMarcas(){
     system("cls");
     int menu;
@@ -1222,7 +1223,7 @@ void corpoComercial::mostrarMarcas(){
             cout<<"\n\n\t\tArchivo cerrado";}
     }
 }
-
+//fin menuMarcas//
 void corpoComercial::menuLineas(){
     system("cls");
     int menu;
