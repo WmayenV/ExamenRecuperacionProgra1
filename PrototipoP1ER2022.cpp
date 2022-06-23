@@ -99,6 +99,7 @@ void corpoComercial::menuGeneral(){
     }
 }
 //fin MenuGeneral//
+// inicio Menuclientes//
 void corpoComercial::menuClientes(){
     system("cls");
     int menu;
@@ -384,7 +385,7 @@ void corpoComercial::mostrarClientes(){
             cout<<"\n\n\t\tArchivo cerrado";}
     }
 }
-
+// fin menu clientes//
 void corpoComercial::menuVendedores(){
     system("cls");
     int menu;
