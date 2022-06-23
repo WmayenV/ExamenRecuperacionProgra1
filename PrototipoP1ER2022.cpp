@@ -1224,6 +1224,7 @@ void corpoComercial::mostrarMarcas(){
     }
 }
 //fin menuMarcas//
+// inicio menuLineas//
 void corpoComercial::menuLineas(){
     system("cls");
     int menu;
@@ -1493,7 +1494,7 @@ void corpoComercial::mostrarLineas(){
             cout<<"\n\n\t\tArchivo cerrado";}
     }
 }
-
+// fin menu lineas//
 int main(){
     system ("cls");
     int contador=0;
